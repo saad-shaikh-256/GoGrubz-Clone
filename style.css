@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary: #fc353a;
+  --white: #ffffff;
+  --black: #111111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  transition: 0.5s;
+  overflow-wrap: break-word;
+}
+
+html,
+body {
+  background-color: var(--white);
+  overflow-x: hidden;
+  width: 100dvw;
+  height: 100dvh;
+  color: black;
+  font-family: "Fredoka", sans-serif;
+  scroll-behavior: smooth;
+}
+
+#Home {
+  height: 900px;
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 40px 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  #leftLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    svg {
+      height: 36px;
+      width: auto;
+
+      path {
+        stroke-width: 2.5;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    img {
+      height: 48px;
+      width: auto;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  #centerLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #fff6;
+    padding: 6px 8px;
+    border-radius: 999px;
+
+    a {
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+      color: var(--white);
+      font-size: 14px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-weight: 500;
+
+      &:hover,
+      &:nth-child(1) {
+        background-color: var(--white);
+        color: var(--primary);
+      }
+    }
+  }
+
+  #rightLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    a {
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+      color: var(--white);
+      font-size: 14px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-weight: 500;
+      color: var(--white);
+      border: 1.5px solid var(--primary);
+    }
+
+    .signUp {
+      background-color: var(--white);
+      color: var(--primary);
+      border: 1.5px solid var(--white);
+
+      &:hover {
+        background-color: var(--primary);
+        color: var(--white);
+        border: 1.5px solid var(--white);
+      }
+    }
+
+    .signIn {
+      background-color: var(--primary);
+      color: var(--white);
+      border: 1.5px solid var(--white);
+
+      &:hover {
+        background-color: var(--white);
+        color: var(--primary);
+        border: 1.5px solid var(--white);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #Home {
+    height: 80%;
+    padding: 20px;
+  }
+
+  nav {
+    #leftLink {
+      gap: 12px;
+
+      svg {
+        height: 36px;
+      }
+
+      img {
+        height: 42px;
+      }
+    }
+
+    #centerLink {
+      display: none;
+    }
+
+    #rightLink {
+      gap: 6px;
+
+      a {
+        font-size: 12px;
+        padding: 6px 16px;
+        font-weight: 600;
+        border: 2px solid var(--primary);
+      }
+
+      .signUp {
+        border: 2px solid var(--white);
+
+        &:hover {
+          border: 2px solid var(--white);
+        }
+      }
+
+      .signIn {
+        border: 2px solid var(--white);
+
+        &:hover {
+          border: 2px solid var(--white);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  #Home {
+    height: 100%;
+    padding: 40px;
+  }
+
+  nav {
+    #leftLink {
+      gap: 12px;
+
+      svg {
+        height: 36px;
+      }
+
+      img {
+        height: 46px;
+      }
+    }
+
+    #centerLink {
+      display: none;
+    }
+
+    #rightLink {
+      gap: 6px;
+
+      a {
+        font-size: 12px;
+        padding: 6px 16px;
+        font-weight: 600;
+        border: 2px solid var(--primary);
+      }
+
+      .signUp {
+        border: 2px solid var(--white);
+
+        &:hover {
+          border: 2px solid var(--white);
+        }
+      }
+
+      .signIn {
+        border: 2px solid var(--white);
+
+        &:hover {
+          border: 2px solid var(--white);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  #Home {
+    height: 100%;
+    padding: 40px 80px;
+  }
+
+  nav {
+    #leftLink {
+      gap: 16px;
+
+      svg {
+        height: 38px;
+      }
+
+      img {
+        height: 48px;
+      }
+    }
+
+    #centerLink {
+      display: none;
+    }
+
+    #rightLink {
+      gap: 6px;
+
+      a {
+        font-size: 12px;
+        padding: 6px 16px;
+        font-weight: 600;
+        border: 2px solid var(--primary);
+      }
+
+      .signUp {
+        border: 2px solid var(--white);
+
+        &:hover {
+          border: 2px solid var(--white);
+        }
+      }
+
+      .signIn {
+        border: 2px solid var(--white);
+
+        &:hover {
+          border: 2px solid var(--white);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  #Home {
+    height: 100%;
+    padding: 40px 100px;
+  }
+
+  nav {
+    #leftLink {
+      gap: 16px;
+
+      svg {
+        height: 38px;
+      }
+
+      img {
+        height: 48px;
+      }
+    }
+
+    #centerLink {
+      display: none;
+    }
+
+    #rightLink {
+      gap: 6px;
+
+      a {
+        font-size: 12px;
+        padding: 6px 16px;
+        font-weight: 600;
+        border: 2px solid var(--primary);
+      }
+
+      .signUp {
+        border: 2px solid var(--white);
+
+        &:hover {
+          border: 2px solid var(--white);
+        }
+      }
+
+      .signIn {
+        border: 2px solid var(--white);
+
+        &:hover {
+          border: 2px solid var(--white);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  #Home {
+    height: 750px;
+  }
+
+  nav {
+    #leftLink {
+      gap: 8px;
+    }
+
+    #centerLink {
+      gap: 2px;
+      padding: 6px 8px;
+
+      a {
+        font-size: 14px;
+        padding: 6px 14px;
+
+        &:nth-child(6) {
+          display: none;
+        }
+      }
+    }
+
+    #rightLink {
+      gap: 6px;
+
+      a {
+        font-size: 14px;
+        padding: 6px 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  #Home {
+    height: 750px;
+    padding: 40px 6%;
+  }
+
+  nav {
+    #leftLink {
+      gap: 20px;
+    }
+
+    #centerLink {
+      gap: 6px;
+      padding: 6px 8px;
+
+      a {
+        font-size: 14px;
+        padding: 6px 16px;
+      }
+    }
+
+    #rightLink {
+      gap: 8px;
+
+      a {
+        font-size: 14px;
+        padding: 6px 16px;
+      }
+    }
+  }
+}
