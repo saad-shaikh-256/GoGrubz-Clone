@@ -28,6 +28,7 @@ body {
 
 #Home {
   display: flex;
+  /* display: none; */
   justify-content: space-between;
   flex-direction: column;
   height: 900px;
@@ -163,14 +164,12 @@ main {
         width: 100%;
         font-size: 64px;
         font-weight: 700;
-        background: linear-gradient(
-          90deg,
-          #fc353a 0%,
-          #fc353a 10%,
-          #ea3035 34%,
-          #db2d31 75%,
-          #db2d31
-        );
+        background: linear-gradient(90deg,
+            #fc353a 0%,
+            #fc353a 10%,
+            #ea3035 34%,
+            #db2d31 75%,
+            #db2d31);
         transform: skew(-20deg, -1deg);
         padding: 30px 50px 30px 0;
         border-radius: 0 80px 30px 0;
@@ -407,6 +406,213 @@ main {
           height: 20x;
           width: auto;
           cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+#App {
+  width: 100%;
+  height: fit-content;
+  padding: 40px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+
+  #app-Mockup {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+
+    #app-upperContainer {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      #leftContainer {
+        width: 35%;
+        border-radius: 30px;
+        background-color: #fdf6f2;
+        padding-top: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+
+        img {
+          width: 70%;
+          height: auto;
+        }
+      }
+
+      #rightContainer {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 32px;
+        background-image: url(Assets/Vectors/craveShape.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 50px 0px;
+
+        #mockup-Title {
+          width: 70%;
+          font-size: 56px;
+          font-weight: 600;
+        }
+
+        #mockup-Content {
+          font-size: 22px;
+        }
+
+        #mockup-Button {
+          font-size: 16px;
+          line-height: 20px;
+          padding: 8px 15px;
+          color: var(--white);
+          background: var(--primary);
+          border: 2px solid var(--primary);
+          border-radius: 50px;
+
+          &:hover {
+            cursor: pointer;
+            color: var(--primary);
+            background: var(--white);
+            border: 2px solid var(--primary);
+          }
+        }
+      }
+    }
+
+    #app-lowerContainer {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      #leftContainer {
+        width: 35%;
+        border-radius: 30px;
+        background-color: #fdf6f2;
+        /* padding-top: 75px; */
+        display: flex;
+        justify-content: center;
+        align-items: end;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      #rightContainer {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 32px;
+        background-image: url(Assets/Vectors/craveShape.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 50px 0px;
+
+        #mockup-Title {
+          width: 70%;
+          font-size: 56px;
+          font-weight: 600;
+        }
+
+        #mockup-Content {
+          font-size: 22px;
+        }
+
+        #mockup-Button {
+          font-size: 16px;
+          line-height: 20px;
+          padding: 8px 15px;
+          color: var(--white);
+          background: var(--primary);
+          border: 2px solid var(--primary);
+          border-radius: 50px;
+
+          &:hover {
+            cursor: pointer;
+            color: var(--primary);
+            background: var(--white);
+            border: 2px solid var(--primary);
+          }
+        }
+      }
+    }
+  }
+
+  #download-App {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 100px 40px 0 40px;
+    border-radius: 30px;
+    background: linear-gradient(-185deg, #fc353a 0%, #fc353a 50%, #db2d31 50%);
+    color: var(--white);
+
+    #leftContainer {
+      width: 35%;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    #rightContainer {
+      width: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      gap: 32px;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 50px 0px;
+
+      #mockup-Title {
+        width: 70%;
+        font-size: 56px;
+        font-weight: 600;
+      }
+
+      #mockup-Content {
+        font-size: 22px;
+      }
+
+      #mockup-Button {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 24px;
+
+        img {
+          height: 36px;
+          width: auto;
         }
       }
     }
