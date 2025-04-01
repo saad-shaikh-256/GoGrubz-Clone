@@ -27,8 +27,8 @@ body {
 }
 
 #Home {
-  /* display: none; */
   display: flex;
+  /* display: none; */
   justify-content: space-between;
   flex-direction: column;
   height: 900px;
@@ -317,8 +317,24 @@ main {
       }
     }
   }
+
   #view-all {
     display: none;
+  }
+}
+
+#Map {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10%;
+
+  iframe {
+    width: 100%;
+    height: 5500px;
+    border-radius: 30px;
   }
 }
 
@@ -449,6 +465,7 @@ main {
 
     #city-Container {
       align-items: start;
+
       .city-List {
         gap: 24px;
         font-size: 16px;
@@ -458,6 +475,7 @@ main {
         display: none;
       }
     }
+
     #view-all {
       width: 100%;
       display: flex;
@@ -466,6 +484,15 @@ main {
       font-weight: 500;
       color: var(--primary);
       cursor: pointer;
+    }
+  }
+
+  #Map {
+    padding: 20px;
+
+    iframe {
+      width: 100%;
+      height: 80dvw;
     }
   }
 }
@@ -602,6 +629,14 @@ main {
       }
     }
   }
+
+  #Map {
+    padding: 20px;
+    iframe {
+      width: 100%;
+      height: 350px;
+    }
+  }
 }
 
 @media (min-width: 601px) and (max-width: 768px) {
@@ -720,6 +755,7 @@ main {
       font-size: 20px;
     }
   }
+
   #City {
     padding: 40px 80px;
     gap: 48x;
@@ -733,6 +769,15 @@ main {
         gap: 24px;
         font-size: 16px;
       }
+    }
+  }
+
+  #Map {
+    padding: 40px 80px;
+
+    iframe {
+      width: 100%;
+      height: 350px;
     }
   }
 }
@@ -869,6 +914,15 @@ main {
       }
     }
   }
+
+  #Map {
+    padding: 40px 100px;
+
+    iframe {
+      width: 100%;
+      height: 400px;
+    }
+  }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -968,6 +1022,13 @@ main {
       font-size: 22px;
     }
   }
+
+  #Map {
+    iframe {
+      width: 100%;
+      height: 450px;
+    }
+  }
 }
 
 @media (min-width: 1201px) and (max-width: 1600px) {
@@ -1056,6 +1117,13 @@ main {
       width: 100%;
       gap: 8px;
       font-size: 26px;
+    }
+  }
+
+  #Map {
+    iframe {
+      width: 100%;
+      height: 500px;
     }
   }
 }
