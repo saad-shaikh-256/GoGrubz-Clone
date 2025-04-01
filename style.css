@@ -33,381 +33,247 @@ body {
   flex-direction: column;
   height: 900px;
   width: 100%;
-
   background-color: var(--primary);
   color: var(--white);
   padding: 40px 10%;
-}
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  #leftLink {
+  nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 24px;
 
-    svg {
-      height: 36px;
-      width: auto;
+    #leftLink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
 
-      path {
-        stroke-width: 2.5;
+      svg {
+        height: 36px;
+        width: auto;
+
+        path {
+          stroke-width: 2.5;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
       }
 
-      &:hover {
-        cursor: pointer;
+      img {
+        height: 48px;
+        width: auto;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
 
-    img {
-      height: 48px;
-      width: auto;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
-
-  #centerLink {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    background-color: #fff6;
-    padding: 6px 8px;
-    border-radius: 999px;
-
-    a {
-      font-family: "Poppins", sans-serif;
-      text-decoration: none;
-      color: var(--white);
-      font-size: 14px;
-      padding: 6px 16px;
+    #centerLink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      background-color: #fff6;
+      padding: 6px 8px;
       border-radius: 999px;
-      font-weight: 500;
 
-      &:hover,
-      &:nth-child(1) {
+      a {
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        color: var(--white);
+        font-size: 14px;
+        padding: 6px 16px;
+        border-radius: 999px;
+        font-weight: 500;
+
+        &:hover,
+        &:nth-child(1) {
+          background-color: var(--white);
+          color: var(--primary);
+        }
+      }
+    }
+
+    #rightLink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+
+      a {
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        color: var(--white);
+        font-size: 14px;
+        padding: 6px 16px;
+        border-radius: 999px;
+        font-weight: 500;
+        color: var(--white);
+        border: 1.5px solid var(--primary);
+      }
+
+      .signUp {
         background-color: var(--white);
         color: var(--primary);
+        border: 1.5px solid var(--white);
+
+        &:hover {
+          background-color: var(--primary);
+          color: var(--white);
+          border: 1.5px solid var(--white);
+        }
       }
-    }
-  }
 
-  #rightLink {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-
-    a {
-      font-family: "Poppins", sans-serif;
-      text-decoration: none;
-      color: var(--white);
-      font-size: 14px;
-      padding: 6px 16px;
-      border-radius: 999px;
-      font-weight: 500;
-      color: var(--white);
-      border: 1.5px solid var(--primary);
-    }
-
-    .signUp {
-      background-color: var(--white);
-      color: var(--primary);
-      border: 1.5px solid var(--white);
-
-      &:hover {
+      .signIn {
         background-color: var(--primary);
         color: var(--white);
         border: 1.5px solid var(--white);
-      }
-    }
 
-    .signIn {
-      background-color: var(--primary);
-      color: var(--white);
-      border: 1.5px solid var(--white);
-
-      &:hover {
-        background-color: var(--white);
-        color: var(--primary);
-        border: 1.5px solid var(--white);
+        &:hover {
+          background-color: var(--white);
+          color: var(--primary);
+          border: 1.5px solid var(--white);
+        }
       }
     }
   }
-}
 
-main {
-  height: fit-content;
-  width: 100%;
-
-  #home-Container {
-    width: 100%;
+  main {
     height: fit-content;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
 
-    #left-Container {
-      width: 50%;
+    #home-Container {
+      width: 100%;
+      height: fit-content;
       display: flex;
-      justify-content: center;
-      flex-direction: column;
-      gap: 36px;
+      justify-content: space-between;
 
-      #upperContainer {
-        width: 100%;
-        font-size: 64px;
-        font-weight: 700;
-        background: linear-gradient(90deg,
+      #left-Container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 36px;
+
+        #upperContainer {
+          width: 100%;
+          font-size: 64px;
+          font-weight: 700;
+          background: linear-gradient(
+            90deg,
             #fc353a 0%,
             #fc353a 10%,
             #ea3035 34%,
             #db2d31 75%,
-            #db2d31);
-        transform: skew(-20deg, -1deg);
-        padding: 30px 50px 30px 0;
-        border-radius: 0 80px 30px 0;
+            #db2d31
+          );
+          transform: skew(-20deg, -1deg);
+          padding: 30px 50px 30px 0;
+          border-radius: 0 80px 30px 0;
 
-        #upperContainer-text {
-          transform: skew(20deg, 1deg);
+          #upperContainer-text {
+            transform: skew(20deg, 1deg);
+          }
         }
-      }
 
-      #lowerContainer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 48px;
-        padding-bottom: 50px;
-
-        #searchContainer {
+        #lowerContainer {
           width: 100%;
           display: flex;
-          justify-content: space-between;
-          align-items: center;
-          background-color: var(--white);
-          padding: 20px 20px;
-          border-radius: 999px;
-          gap: 16px;
+          flex-direction: column;
+          justify-content: center;
+          gap: 48px;
+          padding-bottom: 50px;
 
-          form {
+          #searchContainer {
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            flex-grow: 1;
+            background-color: var(--white);
+            padding: 20px 20px;
+            border-radius: 999px;
             gap: 16px;
 
-            img {
-              height: 32px;
-              width: auto;
-            }
-
-            input {
-              all: unset;
+            form {
               width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
               flex-grow: 1;
-              color: var(--black);
-              font-size: 18px;
-              font-weight: 500;
+              gap: 16px;
 
-              &::placeholder {
-                color: rgb(149, 149, 149);
+              img {
+                height: 32px;
+                width: auto;
+              }
+
+              input {
+                all: unset;
+                width: 100%;
+                flex-grow: 1;
+                color: var(--black);
+                font-size: 18px;
+                font-weight: 500;
+
+                &::placeholder {
+                  color: rgb(149, 149, 149);
+                }
               }
             }
+
+            button {
+              all: unset;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 14px 36px;
+              background-color: var(--black);
+              color: var(--white);
+              border-radius: 999px;
+
+              font-size: 18px;
+            }
           }
 
-          button {
-            all: unset;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 14px 36px;
-            background-color: var(--black);
-            color: var(--white);
-            border-radius: 999px;
+          span {
+            font-size: 24px;
+            font-weight: 500;
+            gap: 8px;
 
-            font-size: 18px;
+            a {
+              color: var(--white);
+            }
           }
         }
+      }
 
-        span {
-          font-size: 24px;
-          font-weight: 500;
-          gap: 8px;
+      #right-Container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        flex-direction: column;
 
-          a {
-            color: var(--white);
-          }
+        img {
+          width: 90%;
+          height: auto;
+          object-fit: cover;
         }
       }
     }
 
-    #right-Container {
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: end;
-      flex-direction: column;
-
-      img {
-        width: 90%;
-        height: auto;
-        object-fit: cover;
-      }
-    }
-  }
-
-  #findMore {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 8px;
-    font-size: 30px;
-    font-weight: 600;
-  }
-}
-
-#City {
-  height: fit-content;
-  width: 100%;
-  padding: 40px 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 56px;
-
-  #city-title {
-    width: 100%;
-    font-size: 32px;
-    font-weight: 600;
-    text-align: center;
-  }
-
-  #city-Container {
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-
-    .city-List {
-      display: flex;
-      justify-content: center;
-      align-items: start;
-      flex-direction: column;
-      gap: 28px;
-      font-size: 20px;
-
-      a {
-        text-decoration: none;
-        color: black;
-      }
-    }
-  }
-
-  #view-all {
-    display: none;
-  }
-}
-
-#Map {
-  height: fit-content;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 10%;
-
-  iframe {
-    width: 100%;
-    height: 550px;
-    border-radius: 30px;
-  }
-}
-
-#Footer {
-  height: fit-content;
-  margin: 40px;
-  padding: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fdf6f2;
-  font-family: "Poppins";
-  border-radius: 30px;
-
-  #footer-leftContainer {
-    width: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    gap: 40px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 30px;
-    color: #5c6574;
-
-    img {
-      width: auto;
-      height: 90px;
-    }
-  }
-
-  #footer-rightContainer {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    font-size: 14px;
-
-    .footer-links {
-      display: flex;
-      justify-content: start;
-      align-items: start;
-      flex-direction: column;
-      gap: 12px;
-
-      a {
-        text-decoration: none;
-        color: var(--black);
-        font-weight: 500;
-      }
-    }
-
-    .footer-socialMedia {
+    #findMore {
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      font-size: 12px;
+      gap: 8px;
+      font-size: 30px;
       font-weight: 600;
-      gap: 12px;
-
-      #socialMedia-Icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-
-        img {
-          height: 20x;
-          width: auto;
-          cursor: pointer;
-        }
-      }
     }
   }
 }
@@ -619,120 +485,388 @@ main {
   }
 }
 
+#Map {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10%;
+
+  iframe {
+    width: 100%;
+    height: 550px;
+    border-radius: 30px;
+  }
+}
+
+#City {
+  height: fit-content;
+  width: 100%;
+  padding: 40px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 56px;
+
+  #city-title {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #city-Container {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    .city-List {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      gap: 28px;
+      font-size: 20px;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  #view-all {
+    display: none;
+  }
+}
+
+#Footer {
+  height: fit-content;
+  margin: 40px;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf6f2;
+  font-family: "Poppins";
+  border-radius: 30px;
+
+  #footer-leftContainer {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #5c6574;
+
+    img {
+      width: auto;
+      height: 90px;
+    }
+  }
+
+  #footer-rightContainer {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    font-size: 14px;
+
+    .footer-links {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
+      gap: 12px;
+
+      a {
+        text-decoration: none;
+        color: var(--black);
+        font-weight: 500;
+      }
+    }
+
+    .footer-socialMedia {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 12px;
+      font-weight: 600;
+      gap: 12px;
+
+      #socialMedia-Icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        img {
+          height: 20x;
+          width: auto;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 480px) {
   #Home {
     height: 80%;
     padding: 20px;
-  }
 
-  nav {
-    #leftLink {
-      gap: 12px;
+    nav {
+      #leftLink {
+        gap: 12px;
 
-      svg {
-        height: 36px;
-      }
+        svg {
+          height: 36px;
+        }
 
-      img {
-        height: 42px;
-      }
-    }
-
-    #centerLink {
-      display: none;
-    }
-
-    #rightLink {
-      gap: 6px;
-
-      a {
-        font-size: 12px;
-        padding: 6px 16px;
-        font-weight: 600;
-        border: 2px solid var(--primary);
-      }
-
-      .signUp {
-        border: 2px solid var(--white);
-
-        &:hover {
-          border: 2px solid var(--white);
+        img {
+          height: 42px;
         }
       }
 
-      .signIn {
-        border: 2px solid var(--white);
+      #centerLink {
+        display: none;
+      }
 
-        &:hover {
+      #rightLink {
+        gap: 6px;
+
+        a {
+          font-size: 12px;
+          padding: 6px 16px;
+          font-weight: 600;
+          border: 2px solid var(--primary);
+        }
+
+        .signUp {
           border: 2px solid var(--white);
+
+          &:hover {
+            border: 2px solid var(--white);
+          }
+        }
+
+        .signIn {
+          border: 2px solid var(--white);
+
+          &:hover {
+            border: 2px solid var(--white);
+          }
         }
       }
     }
-  }
 
-  main {
-    height: fit-content;
+    main {
+      height: fit-content;
 
-    #home-Container {
-      width: 100%;
-      flex-direction: column;
-
-      #left-Container {
+      #home-Container {
         width: 100%;
         flex-direction: column;
-        gap: 28px;
 
-        #upperContainer {
-          font-size: 34px;
-          padding: 20px;
-          border-radius: 0 50px 20px 0;
-        }
+        #left-Container {
+          width: 100%;
+          flex-direction: column;
+          gap: 28px;
 
-        #lowerContainer {
-          gap: 24px;
-          align-items: center;
+          #upperContainer {
+            font-size: 34px;
+            padding: 20px;
+            border-radius: 0 50px 20px 0;
+          }
 
-          #searchContainer {
-            padding: 14px;
-            gap: 12px;
+          #lowerContainer {
+            gap: 24px;
+            align-items: center;
 
-            form {
-              gap: 08px;
+            #searchContainer {
+              padding: 14px;
+              gap: 12px;
 
-              img {
-                height: 24px;
+              form {
+                gap: 08px;
+
+                img {
+                  height: 24px;
+                }
+
+                input {
+                  font-size: 14px;
+                }
               }
 
-              input {
-                font-size: 14px;
+              button {
+                padding: 10px 16px;
+                font-size: 16px;
               }
             }
 
-            button {
-              padding: 10px 16px;
+            span {
               font-size: 16px;
             }
           }
+        }
 
-          span {
-            font-size: 16px;
+        #right-Container {
+          width: 100%;
+          align-items: center;
+
+          img {
+            width: 70%;
           }
         }
       }
 
-      #right-Container {
-        width: 100%;
-        align-items: center;
+      #findMore {
+        gap: 8px;
+        font-size: 20px;
+      }
+    }
+  }
 
-        img {
-          width: 70%;
+  #App {
+    width: 100%;
+    padding: 20px;
+    gap: 40px;
+
+    #app-Mockup {
+      width: 100%;
+      gap: 40px;
+
+      #app-upperContainer {
+        width: 100%;
+        flex-direction: column;
+
+        #leftContainer {
+          width: 100%;
+
+          img {
+            width: 80%;
+            height: auto;
+          }
+        }
+
+        #rightContainer {
+          width: 100%;
+          gap: 28px;
+          background-image: url(Assets/Vectors/craveShape.svg);
+          background-size: 250px;
+          padding: 40px 0px;
+
+          #mockup-Title {
+            width: 100%;
+            font-size: 42px;
+          }
+
+          #mockup-Content {
+            font-size: 18px;
+          }
+
+          #mockup-Button {
+            font-size: 14px;
+          }
+        }
+      }
+
+      #app-lowerContainer {
+        width: 100%;
+        flex-direction: column;
+
+        #leftContainer {
+          order: 0;
+          width: 100%;
+        }
+
+        #rightContainer {
+          order: 1;
+          width: 100%;
+          gap: 28px;
+          background-image: url(Assets/Vectors/craveShape.svg);
+          background-size: 250px;
+          padding: 40px 0px;
+
+          #mockup-Title {
+            width: 100%;
+            font-size: 42px;
+          }
+
+          #mockup-Content {
+            font-size: 18px;
+          }
+
+          #mockup-Button {
+            font-size: 14px;
+          }
         }
       }
     }
 
-    #findMore {
-      gap: 8px;
-      font-size: 20px;
+    #download-App {
+      width: 100%;
+      align-items: start;
+      flex-direction: column;
+      padding: 40px 20px;
+      background: linear-gradient(
+        -185deg,
+        #fc353a 0%,
+        #fc353a 50%,
+        #db2d31 50%
+      );
+
+      #leftContainer {
+        width: 100%;
+
+        img {
+          width: 90%;
+        }
+      }
+
+      #rightContainer {
+        width: 100%;
+        gap: 32px;
+        padding: 50px 0 0 0;
+
+        #mockup-Title {
+          width: 100%;
+          font-size: 38px;
+        }
+
+        #mockup-Content {
+          font-size: 16px;
+        }
+
+        #mockup-Button {
+          width: 100%;
+          gap: 12px;
+
+          img {
+            height: 28x;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  #Map {
+    padding: 20px;
+
+    iframe {
+      width: 100%;
+      height: 80dvw;
     }
   }
 
@@ -765,15 +899,6 @@ main {
       font-weight: 500;
       color: var(--primary);
       cursor: pointer;
-    }
-  }
-
-  #Map {
-    padding: 20px;
-
-    iframe {
-      width: 100%;
-      height: 80dvw;
     }
   }
 
@@ -814,116 +939,249 @@ main {
   #Home {
     height: 100%;
     padding: 40px;
-  }
 
-  nav {
-    #leftLink {
-      gap: 12px;
+    nav {
+      #leftLink {
+        gap: 12px;
 
-      svg {
-        height: 36px;
-      }
+        svg {
+          height: 36px;
+        }
 
-      img {
-        height: 46px;
-      }
-    }
-
-    #centerLink {
-      display: none;
-    }
-
-    #rightLink {
-      gap: 6px;
-
-      a {
-        font-size: 12px;
-        padding: 6px 16px;
-        font-weight: 600;
-        border: 2px solid var(--primary);
-      }
-
-      .signUp {
-        border: 2px solid var(--white);
-
-        &:hover {
-          border: 2px solid var(--white);
+        img {
+          height: 46px;
         }
       }
 
-      .signIn {
-        border: 2px solid var(--white);
+      #centerLink {
+        display: none;
+      }
 
-        &:hover {
+      #rightLink {
+        gap: 6px;
+
+        a {
+          font-size: 12px;
+          padding: 6px 16px;
+          font-weight: 600;
+          border: 2px solid var(--primary);
+        }
+
+        .signUp {
           border: 2px solid var(--white);
+
+          &:hover {
+            border: 2px solid var(--white);
+          }
+        }
+
+        .signIn {
+          border: 2px solid var(--white);
+
+          &:hover {
+            border: 2px solid var(--white);
+          }
         }
       }
     }
-  }
 
-  main {
-    height: fit-content;
+    main {
+      height: fit-content;
 
-    #home-Container {
-      width: 100%;
-      flex-direction: column;
-
-      #left-Container {
+      #home-Container {
         width: 100%;
         flex-direction: column;
-        gap: 28px;
 
-        #upperContainer {
-          font-size: 46px;
-          padding: 20px;
-          border-radius: 0 50px 20px 0;
-        }
+        #left-Container {
+          width: 100%;
+          flex-direction: column;
+          gap: 28px;
 
-        #lowerContainer {
-          gap: 24px;
-          align-items: center;
+          #upperContainer {
+            font-size: 46px;
+            padding: 20px;
+            border-radius: 0 50px 20px 0;
+          }
 
-          #searchContainer {
-            padding: 14px;
-            gap: 12px;
+          #lowerContainer {
+            gap: 24px;
+            align-items: center;
 
-            form {
-              gap: 08px;
+            #searchContainer {
+              padding: 14px;
+              gap: 12px;
 
-              img {
-                height: 24px;
+              form {
+                gap: 08px;
+
+                img {
+                  height: 24px;
+                }
+
+                input {
+                  font-size: 16px;
+                }
               }
 
-              input {
+              button {
+                padding: 10px 16px;
                 font-size: 16px;
               }
             }
 
-            button {
-              padding: 10px 16px;
+            span {
               font-size: 16px;
             }
           }
+        }
 
-          span {
-            font-size: 16px;
+        #right-Container {
+          width: 100%;
+          align-items: center;
+
+          img {
+            width: 70%;
           }
         }
       }
 
-      #right-Container {
+      #findMore {
+        gap: 8px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  #App {
+    width: 100%;
+    padding: 40px;
+    gap: 40px;
+
+    #app-Mockup {
+      width: 100%;
+      gap: 40px;
+
+      #app-upperContainer {
         width: 100%;
-        align-items: center;
+        flex-direction: column;
+
+        #leftContainer {
+          width: 100%;
+
+          img {
+            width: 80%;
+            height: auto;
+          }
+        }
+
+        #rightContainer {
+          width: 100%;
+          gap: 28px;
+          background-image: url(Assets/Vectors/craveShape.svg);
+          background-size: 250px;
+          padding: 40px 0px;
+
+          #mockup-Title {
+            width: 100%;
+            font-size: 42px;
+          }
+
+          #mockup-Content {
+            font-size: 18px;
+          }
+
+          #mockup-Button {
+            font-size: 14px;
+          }
+        }
+      }
+
+      #app-lowerContainer {
+        width: 100%;
+        flex-direction: column;
+
+        #leftContainer {
+          order: 0;
+          width: 100%;
+        }
+
+        #rightContainer {
+          order: 1;
+          width: 100%;
+          gap: 28px;
+          background-image: url(Assets/Vectors/craveShape.svg);
+          background-size: 250px;
+          padding: 40px 0px;
+
+          #mockup-Title {
+            width: 100%;
+            font-size: 42px;
+          }
+
+          #mockup-Content {
+            font-size: 18px;
+          }
+
+          #mockup-Button {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    #download-App {
+      width: 100%;
+      align-items: start;
+      flex-direction: column;
+      padding: 40px 20px;
+      background: linear-gradient(
+        -185deg,
+        #fc353a 0%,
+        #fc353a 50%,
+        #db2d31 50%
+      );
+
+      #leftContainer {
+        width: 100%;
 
         img {
           width: 70%;
         }
       }
-    }
 
-    #findMore {
-      gap: 8px;
-      font-size: 20px;
+      #rightContainer {
+        width: 100%;
+        gap: 32px;
+        padding: 50px 0 0 0;
+
+        #mockup-Title {
+          width: 100%;
+          font-size: 38px;
+        }
+
+        #mockup-Content {
+          font-size: 16px;
+        }
+
+        #mockup-Button {
+          width: 100%;
+          gap: 12px;
+
+          img {
+            height: 28x;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  #Map {
+    padding: 20px;
+
+    iframe {
+      width: 100%;
+      height: 350px;
     }
   }
 
@@ -940,15 +1198,6 @@ main {
         gap: 24px;
         font-size: 16px;
       }
-    }
-  }
-
-  #Map {
-    padding: 20px;
-
-    iframe {
-      width: 100%;
-      height: 350px;
     }
   }
 
@@ -988,116 +1237,249 @@ main {
   #Home {
     height: 100%;
     padding: 40px 80px;
-  }
 
-  nav {
-    #leftLink {
-      gap: 16px;
+    nav {
+      #leftLink {
+        gap: 16px;
 
-      svg {
-        height: 38px;
-      }
+        svg {
+          height: 38px;
+        }
 
-      img {
-        height: 48px;
-      }
-    }
-
-    #centerLink {
-      display: none;
-    }
-
-    #rightLink {
-      gap: 6px;
-
-      a {
-        font-size: 12px;
-        padding: 6px 16px;
-        font-weight: 600;
-        border: 2px solid var(--primary);
-      }
-
-      .signUp {
-        border: 2px solid var(--white);
-
-        &:hover {
-          border: 2px solid var(--white);
+        img {
+          height: 48px;
         }
       }
 
-      .signIn {
-        border: 2px solid var(--white);
+      #centerLink {
+        display: none;
+      }
 
-        &:hover {
+      #rightLink {
+        gap: 6px;
+
+        a {
+          font-size: 12px;
+          padding: 6px 16px;
+          font-weight: 600;
+          border: 2px solid var(--primary);
+        }
+
+        .signUp {
           border: 2px solid var(--white);
+
+          &:hover {
+            border: 2px solid var(--white);
+          }
+        }
+
+        .signIn {
+          border: 2px solid var(--white);
+
+          &:hover {
+            border: 2px solid var(--white);
+          }
         }
       }
     }
-  }
 
-  main {
-    height: fit-content;
+    main {
+      height: fit-content;
 
-    #home-Container {
-      width: 100%;
-      flex-direction: column;
-
-      #left-Container {
+      #home-Container {
         width: 100%;
         flex-direction: column;
-        gap: 28px;
 
-        #upperContainer {
-          font-size: 46px;
-          padding: 20px;
-          border-radius: 0 50px 20px 0;
-        }
+        #left-Container {
+          width: 100%;
+          flex-direction: column;
+          gap: 28px;
 
-        #lowerContainer {
-          gap: 24px;
-          align-items: center;
+          #upperContainer {
+            font-size: 46px;
+            padding: 20px;
+            border-radius: 0 50px 20px 0;
+          }
 
-          #searchContainer {
-            padding: 14px;
-            gap: 12px;
+          #lowerContainer {
+            gap: 24px;
+            align-items: center;
 
-            form {
-              gap: 08px;
+            #searchContainer {
+              padding: 14px;
+              gap: 12px;
 
-              img {
-                height: 24px;
+              form {
+                gap: 08px;
+
+                img {
+                  height: 24px;
+                }
+
+                input {
+                  font-size: 16px;
+                }
               }
 
-              input {
+              button {
+                padding: 10px 16px;
                 font-size: 16px;
               }
             }
 
-            button {
-              padding: 10px 16px;
+            span {
               font-size: 16px;
             }
           }
+        }
 
-          span {
-            font-size: 16px;
+        #right-Container {
+          width: 100%;
+          align-items: center;
+
+          img {
+            width: 70%;
           }
         }
       }
 
-      #right-Container {
+      #findMore {
+        gap: 8px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  #App {
+    width: 100%;
+    padding: 40px 80px;
+    gap: 40px;
+
+    #app-Mockup {
+      width: 100%;
+      gap: 40px;
+
+      #app-upperContainer {
         width: 100%;
-        align-items: center;
+        flex-direction: column;
+
+        #leftContainer {
+          width: 100%;
+
+          img {
+            width: 60%;
+            height: auto;
+          }
+        }
+
+        #rightContainer {
+          width: 100%;
+          gap: 28px;
+          background-image: url(Assets/Vectors/craveShape.svg);
+          background-size: 200px;
+          padding: 40px 0px;
+
+          #mockup-Title {
+            width: 100%;
+            font-size: 42px;
+          }
+
+          #mockup-Content {
+            font-size: 18px;
+          }
+
+          #mockup-Button {
+            font-size: 14px;
+          }
+        }
+      }
+
+      #app-lowerContainer {
+        width: 100%;
+        flex-direction: column;
+
+        #leftContainer {
+          order: 0;
+          width: 100%;
+        }
+
+        #rightContainer {
+          order: 1;
+          width: 100%;
+          gap: 28px;
+          background-image: url(Assets/Vectors/craveShape.svg);
+          background-size: 250px;
+          padding: 40px 0px;
+
+          #mockup-Title {
+            width: 100%;
+            font-size: 42px;
+          }
+
+          #mockup-Content {
+            font-size: 18px;
+          }
+
+          #mockup-Button {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    #download-App {
+      width: 100%;
+      align-items: start;
+      flex-direction: column;
+      padding: 40px 20px;
+      background: linear-gradient(
+        -185deg,
+        #fc353a 0%,
+        #fc353a 50%,
+        #db2d31 50%
+      );
+
+      #leftContainer {
+        width: 100%;
 
         img {
           width: 70%;
         }
       }
-    }
 
-    #findMore {
-      gap: 8px;
-      font-size: 20px;
+      #rightContainer {
+        width: 100%;
+        gap: 32px;
+        padding: 50px 0 0 0;
+
+        #mockup-Title {
+          width: 100%;
+          font-size: 38px;
+        }
+
+        #mockup-Content {
+          font-size: 16px;
+        }
+
+        #mockup-Button {
+          width: 100%;
+          gap: 12px;
+
+          img {
+            height: 28x;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  #Map {
+    padding: 40px 80px;
+
+    iframe {
+      width: 100%;
+      height: 350px;
     }
   }
 
@@ -1114,15 +1496,6 @@ main {
         gap: 24px;
         font-size: 16px;
       }
-    }
-  }
-
-  #Map {
-    padding: 40px 80px;
-
-    iframe {
-      width: 100%;
-      height: 350px;
     }
   }
 
@@ -1162,116 +1535,249 @@ main {
   #Home {
     height: 100%;
     padding: 40px 100px;
-  }
 
-  nav {
-    #leftLink {
-      gap: 16px;
+    nav {
+      #leftLink {
+        gap: 16px;
 
-      svg {
-        height: 38px;
-      }
+        svg {
+          height: 38px;
+        }
 
-      img {
-        height: 48px;
-      }
-    }
-
-    #centerLink {
-      display: none;
-    }
-
-    #rightLink {
-      gap: 6px;
-
-      a {
-        font-size: 12px;
-        padding: 6px 16px;
-        font-weight: 600;
-        border: 2px solid var(--primary);
-      }
-
-      .signUp {
-        border: 2px solid var(--white);
-
-        &:hover {
-          border: 2px solid var(--white);
+        img {
+          height: 48px;
         }
       }
 
-      .signIn {
-        border: 2px solid var(--white);
+      #centerLink {
+        display: none;
+      }
 
-        &:hover {
+      #rightLink {
+        gap: 6px;
+
+        a {
+          font-size: 12px;
+          padding: 6px 16px;
+          font-weight: 600;
+          border: 2px solid var(--primary);
+        }
+
+        .signUp {
           border: 2px solid var(--white);
+
+          &:hover {
+            border: 2px solid var(--white);
+          }
+        }
+
+        .signIn {
+          border: 2px solid var(--white);
+
+          &:hover {
+            border: 2px solid var(--white);
+          }
         }
       }
     }
-  }
 
-  main {
-    height: fit-content;
+    main {
+      height: fit-content;
 
-    #home-Container {
-      width: 100%;
-      flex-direction: column;
-
-      #left-Container {
+      #home-Container {
         width: 100%;
-        gap: 28px;
+        flex-direction: column;
 
-        #upperContainer {
-          font-size: 52px;
+        #left-Container {
+          width: 100%;
+          gap: 28px;
 
-          #upperContainer-text {
-            text-align: center;
+          #upperContainer {
+            font-size: 52px;
+
+            #upperContainer-text {
+              text-align: center;
+            }
+          }
+
+          #lowerContainer {
+            gap: 28px;
+            padding-bottom: 32px;
+
+            #searchContainer {
+              width: 100%;
+              padding: 12px;
+
+              form {
+                gap: 14px;
+
+                img {
+                  height: 22px;
+                }
+
+                input {
+                  font-size: 18px;
+                  font-weight: 400;
+                }
+              }
+
+              button {
+                padding: 10px 24px;
+                font-size: 16px;
+              }
+            }
+
+            span {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 20px;
+            }
           }
         }
 
-        #lowerContainer {
+        #right-Container {
+          width: 100%;
+
+          img {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+
+  #App {
+    width: 100%;
+    padding: 40px 100px;
+    gap: 60px;
+
+    #app-Mockup {
+      width: 100%;
+      gap: 40px;
+
+      #app-upperContainer {
+        width: 100%;
+        flex-direction: column;
+
+        #leftContainer {
+          width: 100%;
+
+          img {
+            width: 40%;
+            height: auto;
+          }
+        }
+
+        #rightContainer {
+          width: 100%;
           gap: 28px;
-          padding-bottom: 32px;
+          background-image: url(Assets/Vectors/craveShape.svg);
+          background-size: 200px;
+          padding: 40px 0px;
 
-          #searchContainer {
+          #mockup-Title {
             width: 100%;
-            padding: 12px;
-
-            form {
-              gap: 14px;
-
-              img {
-                height: 22px;
-              }
-
-              input {
-                font-size: 18px;
-                font-weight: 400;
-              }
-            }
-
-            button {
-              padding: 10px 24px;
-              font-size: 16px;
-            }
+            font-size: 42px;
           }
 
-          span {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 20px;
+          #mockup-Content {
+            font-size: 18px;
+          }
+
+          #mockup-Button {
+            font-size: 14px;
           }
         }
       }
 
-      #right-Container {
+      #app-lowerContainer {
+        width: 100%;
+        flex-direction: column;
+
+        #leftContainer {
+          order: 0;
+          width: 100%;
+        }
+
+        #rightContainer {
+          order: 1;
+          width: 100%;
+          gap: 28px;
+          background-image: url(Assets/Vectors/craveShape.svg);
+          background-size: 250px;
+          padding: 40px 0px;
+
+          #mockup-Title {
+            width: 100%;
+            font-size: 42px;
+          }
+
+          #mockup-Content {
+            font-size: 18px;
+          }
+
+          #mockup-Button {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    #download-App {
+      width: 100%;
+      align-items: start;
+      flex-direction: column;
+      padding: 40px 60px;
+      background: linear-gradient(
+        -185deg,
+        #fc353a 0%,
+        #fc353a 50%,
+        #db2d31 50%
+      );
+
+      #leftContainer {
         width: 100%;
 
         img {
-          width: 70%;
+          width: 60%;
         }
       }
+
+      #rightContainer {
+        width: 100%;
+        gap: 32px;
+        padding: 50px 0 0 0;
+
+        #mockup-Title {
+          width: 100%;
+          font-size: 38px;
+        }
+
+        #mockup-Content {
+          font-size: 16px;
+        }
+
+        #mockup-Button {
+          width: 100%;
+          gap: 12px;
+
+          img {
+            height: 28x;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  #Map {
+    padding: 40px 100px;
+
+    iframe {
+      width: 100%;
+      height: 400px;
     }
   }
 
@@ -1288,15 +1794,6 @@ main {
         gap: 24px;
         font-size: 16px;
       }
-    }
-  }
-
-  #Map {
-    padding: 40px 100px;
-
-    iframe {
-      width: 100%;
-      height: 400px;
     }
   }
 
@@ -1335,98 +1832,202 @@ main {
 @media (min-width: 993px) and (max-width: 1200px) {
   #Home {
     height: 750px;
-  }
 
-  nav {
-    #leftLink {
-      gap: 8px;
-    }
+    nav {
+      #leftLink {
+        gap: 8px;
+      }
 
-    #centerLink {
-      gap: 2px;
-      padding: 6px 8px;
+      #centerLink {
+        gap: 2px;
+        padding: 6px 8px;
 
-      a {
-        font-size: 14px;
-        padding: 6px 14px;
+        a {
+          font-size: 14px;
+          padding: 6px 14px;
 
-        &:nth-child(6) {
-          display: none;
+          &:nth-child(6) {
+            display: none;
+          }
+        }
+      }
+
+      #rightLink {
+        gap: 6px;
+
+        a {
+          font-size: 14px;
+          padding: 6px 14px;
         }
       }
     }
 
-    #rightLink {
-      gap: 6px;
-
-      a {
-        font-size: 14px;
-        padding: 6px 14px;
-      }
-    }
-  }
-
-  main {
-    width: 100%;
-
-    #home-Container {
+    main {
       width: 100%;
-      gap: 32px;
 
-      #left-Container {
-        width: 60%;
-        gap: 36px;
+      #home-Container {
+        width: 100%;
+        gap: 32px;
 
-        #upperContainer {
-          width: 100%;
-          font-size: 48px;
-        }
-
-        #lowerContainer {
+        #left-Container {
+          width: 60%;
           gap: 36px;
 
-          #searchContainer {
+          #upperContainer {
             width: 100%;
-            padding: 16px 16px;
+            font-size: 48px;
+          }
 
-            form {
+          #lowerContainer {
+            gap: 36px;
+
+            #searchContainer {
               width: 100%;
-              gap: 12px;
+              padding: 16px 16px;
 
-              img {
-                height: 28px;
+              form {
+                width: 100%;
+                gap: 12px;
+
+                img {
+                  height: 28px;
+                }
+
+                input {
+                  font-size: 16px;
+                }
               }
 
-              input {
+              button {
+                padding: 12px 24px;
                 font-size: 16px;
               }
             }
 
-            button {
-              padding: 12px 24px;
-              font-size: 16px;
+            span {
+              font-size: 22px;
             }
           }
+        }
 
-          span {
-            font-size: 22px;
+        #right-Container {
+          width: 40%;
+          align-items: end;
+
+          img {
+            width: auto;
+            height: 40%;
           }
         }
       }
 
-      #right-Container {
-        width: 40%;
-        align-items: end;
+      #findMore {
+        font-size: 22px;
+      }
+    }
+  }
 
-        img {
-          width: auto;
-          height: 40%;
+  #App {
+    width: 100%;
+
+    #app-Mockup {
+      width: 100%;
+      gap: 100px;
+
+      #app-upperContainer {
+        width: 100%;
+
+        #leftContainer {
+          width: 35%;
+
+          img {
+            width: 80%;
+          }
+        }
+
+        #rightContainer {
+          width: 55%;
+          padding: 50px 0px;
+
+          #mockup-Title {
+            width: 100%;
+            font-size: 46px;
+          }
+
+          #mockup-Content {
+            font-size: 18px;
+          }
+
+          #mockup-Button {
+            font-size: 14px;
+          }
+        }
+      }
+
+      #app-lowerContainer {
+        width: 100%;
+
+        #leftContainer {
+          width: 35%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        #rightContainer {
+          width: 55%;
+          padding: 50px 0px;
+
+          #mockup-Title {
+            width: 100%;
+            font-size: 46px;
+          }
+
+          #mockup-Content {
+            font-size: 18px;
+          }
+
+          #mockup-Button {
+            font-size: 14px;
+          }
         }
       }
     }
 
-    #findMore {
-      font-size: 22px;
+    #download-App {
+      padding: 40px 40px 0 40px;
+
+      #leftContainer {
+        width: 45%;
+        align-items: end;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      #rightContainer {
+        width: 45%;
+        gap: 32px;
+
+        #mockup-Title {
+          width: 100%;
+          font-size: 46px;
+        }
+
+        #mockup-Content {
+          font-size: 18px;
+        }
+
+        #mockup-Button {
+          gap: 16px;
+
+          img {
+            height: 32px;
+          }
+        }
+      }
     }
   }
 
@@ -1472,88 +2073,193 @@ main {
   #Home {
     height: 750px;
     padding: 40px 6%;
-  }
 
-  nav {
-    #leftLink {
-      gap: 20px;
-    }
+    nav {
+      #leftLink {
+        gap: 20px;
+      }
 
-    #centerLink {
-      gap: 6px;
-      padding: 6px 8px;
+      #centerLink {
+        gap: 6px;
+        padding: 6px 8px;
 
-      a {
-        font-size: 14px;
-        padding: 6px 16px;
+        a {
+          font-size: 14px;
+          padding: 6px 16px;
+        }
+      }
+
+      #rightLink {
+        gap: 8px;
+
+        a {
+          font-size: 14px;
+          padding: 6px 16px;
+        }
       }
     }
 
-    #rightLink {
-      gap: 8px;
-
-      a {
-        font-size: 14px;
-        padding: 6px 16px;
-      }
-    }
-  }
-
-  main {
-    width: 100%;
-
-    #home-Container {
+    main {
       width: 100%;
 
-      #left-Container {
-        width: 50%;
-        gap: 36px;
+      #home-Container {
+        width: 100%;
 
-        #upperContainer {
-          width: 100%;
-          font-size: 56px;
-          font-weight: 700;
-        }
+        #left-Container {
+          width: 50%;
+          gap: 36px;
 
-        #lowerContainer {
-          #searchContainer {
-            padding: 18px 18px;
+          #upperContainer {
+            width: 100%;
+            font-size: 56px;
+            font-weight: 700;
+          }
 
-            form {
-              img {
-                height: 30px;
+          #lowerContainer {
+            #searchContainer {
+              padding: 18px 18px;
+
+              form {
+                img {
+                  height: 30px;
+                }
+
+                input {
+                  font-size: 16px;
+                }
               }
 
-              input {
+              button {
+                padding: 12px 32px;
                 font-size: 16px;
               }
             }
 
-            button {
-              padding: 12px 32px;
-              font-size: 16px;
+            span {
+              font-size: 22px;
             }
           }
+        }
 
-          span {
-            font-size: 22px;
+        #right-Container {
+          width: 50%;
+
+          img {
+            width: 90%;
           }
         }
       }
 
-      #right-Container {
-        width: 50%;
+      #findMore {
+        width: 100%;
+        gap: 8px;
+        font-size: 26px;
+      }
+    }
+  }
 
-        img {
-          width: 90%;
+  #App {
+    width: 100%;
+    padding: 40px 6%;
+
+    #app-Mockup {
+      width: 100%;
+      gap: 100px;
+
+      #app-upperContainer {
+        width: 100%;
+
+        #leftContainer {
+          width: 35%;
+
+          img {
+            width: 70%;
+          }
+        }
+
+        #rightContainer {
+          width: 45%;
+          padding: 50px 0px;
+
+          #mockup-Title {
+            width:80%;
+            font-size: 52px;
+          }
+
+          #mockup-Content {
+            font-size: 18px;
+          }
+
+          #mockup-Button {
+            font-size: 14px;
+          }
+        }
+      }
+
+      #app-lowerContainer {
+        width: 100%;
+
+        #leftContainer {
+          width: 35%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        #rightContainer {
+          width: 45%;
+          padding: 50px 0px;
+
+          #mockup-Title {
+            width: 100%;
+            font-size: 52px;
+          }
+
+          #mockup-Content {
+            font-size: 18px;
+          }
+
+          #mockup-Button {
+            font-size: 14px;
+          }
         }
       }
     }
 
-    #findMore {
-      width: 100%;
-      gap: 8px;
-      font-size: 26px;
+    #download-App {
+      padding: 80px 40px 0 40px;
+
+      #leftContainer {
+        width: 45%;
+        align-items: end;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      #rightContainer {
+        width: 45%;
+        gap: 32px;
+
+        #mockup-Title {
+          width: 100%;
+          font-size: 46px;
+        }
+
+        #mockup-Content {
+          font-size: 18px;
+        }
+
+        #mockup-Button {
+          gap: 16px;
+
+          img {
+            height: 32px;
+          }
+        }
+      }
     }
   }
 
