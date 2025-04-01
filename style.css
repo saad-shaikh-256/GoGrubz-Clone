@@ -278,6 +278,142 @@ body {
   }
 }
 
+#Offer {
+  height: fit-content;
+  width: 100%;
+  padding: 40px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+
+  #offer-title {
+    font-size: 38px;
+    font-weight: 600;
+    padding: 20px;
+    background-image: url(Assets/Vectors/craveShape.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  #offer-Container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+
+    #offer-topContainer {
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 80px;
+
+      .offerBox {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 40px;
+        border-radius: 30px;
+        gap: 32px;
+        background: linear-gradient(90deg, #fdf6f2 0%, #fdf6f2 60%, #975a3700),
+          url("Assets/Images/movementBg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        .top-boxTitle {
+          width: 60%;
+          font-size: 28px;
+          font-weight: 600;
+          color: var(--primary);
+        }
+
+        .top-boxContent {
+          width: 60%;
+          font-size: 20px;
+          font-weight: 500;
+          opacity: 70%;
+        }
+
+        .top-boxButton {
+          font-size: 16px;
+          line-height: 20px;
+          padding: 8px 15px;
+          color: var(--white);
+          background: var(--primary);
+          border: 2px solid var(--primary);
+          border-radius: 50px;
+
+          &:hover {
+            cursor: pointer;
+            color: var(--primary);
+            background: var(--white);
+            border: 2px solid var(--primary);
+          }
+        }
+      }
+    }
+
+    #offer-bottomContainer {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
+      gap: 36px;
+      padding: 80px 120px;
+      border-radius: 30px;
+      background: linear-gradient(
+          140deg,
+          #fdf6f2 0%,
+          #fdf6f2 50%,
+          transparent 50%
+        ),
+        url("Assets/Images/movementBg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      #bottom-boxTitle {
+        width: 25%;
+        font-size: 52px;
+        font-weight: 600;
+      }
+
+      #bottom-boxContent {
+        width: 30%;
+        font-size: 22px;
+      }
+
+      #bottom-boxButton {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 8px 15px;
+        color: var(--white);
+        background: var(--primary);
+        border: 2px solid var(--primary);
+        border-radius: 50px;
+
+        &:hover {
+          cursor: pointer;
+          color: var(--primary);
+          background: var(--white);
+          border: 2px solid var(--primary);
+        }
+      }
+    }
+  }
+}
+
 #App {
   width: 100%;
   height: fit-content;
@@ -460,7 +596,7 @@ body {
       padding: 50px 0px;
 
       #mockup-Title {
-        width: 70%;
+       width: 70%;
         font-size: 56px;
         font-weight: 600;
       }
@@ -733,6 +869,83 @@ body {
       #findMore {
         gap: 8px;
         font-size: 20px;
+      }
+    }
+  }
+
+  #Offer {
+    width: 100%;
+    padding: 20px;
+    gap: 32px;
+
+    #offer-title {
+      font-size: 28px;
+    }
+
+    #offer-Container {
+      width: 100%;
+      gap: 48px;
+
+      #offer-topContainer {
+        flex-direction: column;
+        gap: 24px;
+
+        .offerBox {
+          width: 100%;
+          flex-grow: 1;
+          padding: 24px 32px;
+          gap: 20px;
+
+          .top-boxTitle {
+            width: 80%;
+            font-size: 22px;
+          }
+
+          .top-boxContent {
+            width: 80%;
+            font-size: 16px;
+          }
+
+          .top-boxButton {
+            font-size: 12px;
+            padding: 8px 14px;
+          }
+        }
+      }
+
+      #offer-bottomContainer {
+        width: 100%;
+        gap: 36px;
+        padding: 40px 20px;
+        border-radius: 30px;
+        background: linear-gradient(90deg, #fdf6f2, #fdf6f2);
+
+        #bottom-boxTitle {
+          width: 100%;
+          font-size: 38px;
+        }
+
+        #bottom-boxContent {
+          width: 100%;
+          font-size: 18px;
+        }
+
+        #bottom-boxButton {
+          font-size: 16px;
+          line-height: 20px;
+          padding: 8px 15px;
+          color: var(--white);
+          background: var(--primary);
+          border: 2px solid var(--primary);
+          border-radius: 50px;
+
+          &:hover {
+            cursor: pointer;
+            color: var(--primary);
+            background: var(--white);
+            border: 2px solid var(--primary);
+          }
+        }
       }
     }
   }
@@ -1052,6 +1265,83 @@ body {
     }
   }
 
+  #Offer {
+    width: 100%;
+    padding: 20px;
+    gap: 32px;
+
+    #offer-title {
+      font-size: 28px;
+    }
+
+    #offer-Container {
+      width: 100%;
+      gap: 48px;
+
+      #offer-topContainer {
+        flex-direction: column;
+        gap: 24px;
+
+        .offerBox {
+          width: 100%;
+          flex-grow: 1;
+          padding: 24px 32px;
+          gap: 20px;
+
+          .top-boxTitle {
+            width: 80%;
+            font-size: 22px;
+          }
+
+          .top-boxContent {
+            width: 80%;
+            font-size: 16px;
+          }
+
+          .top-boxButton {
+            font-size: 12px;
+            padding: 8px 14px;
+          }
+        }
+      }
+
+      #offer-bottomContainer {
+        width: 100%;
+        gap: 32px;
+        padding: 40px 40px;
+        border-radius: 30px;
+        background: linear-gradient(90deg, #fdf6f2, #fdf6f2);
+
+        #bottom-boxTitle {
+          width: 100%;
+          font-size: 38px;
+        }
+
+        #bottom-boxContent {
+          width: 80%;
+          font-size: 18px;
+        }
+
+        #bottom-boxButton {
+          font-size: 16px;
+          line-height: 20px;
+          padding: 8px 15px;
+          color: var(--white);
+          background: var(--primary);
+          border: 2px solid var(--primary);
+          border-radius: 50px;
+
+          &:hover {
+            cursor: pointer;
+            color: var(--primary);
+            background: var(--white);
+            border: 2px solid var(--primary);
+          }
+        }
+      }
+    }
+  }
+
   #App {
     width: 100%;
     padding: 40px;
@@ -1346,6 +1636,83 @@ body {
       #findMore {
         gap: 8px;
         font-size: 20px;
+      }
+    }
+  }
+
+  #Offer {
+    width: 100%;
+    padding: 40px 80px;
+    gap: 32px;
+
+    #offer-title {
+      font-size: 28px;
+    }
+
+    #offer-Container {
+      width: 100%;
+      gap: 48px;
+
+      #offer-topContainer {
+        flex-direction: column;
+        gap: 24px;
+
+        .offerBox {
+          width: 100%;
+          flex-grow: 1;
+          padding: 24px 32px;
+          gap: 20px;
+
+          .top-boxTitle {
+            width: 80%;
+            font-size: 22px;
+          }
+
+          .top-boxContent {
+            width: 80%;
+            font-size: 16px;
+          }
+
+          .top-boxButton {
+            font-size: 12px;
+            padding: 8px 14px;
+          }
+        }
+      }
+
+      #offer-bottomContainer {
+        width: 100%;
+        gap: 32px;
+        padding: 40px 40px;
+        border-radius: 30px;
+        background: linear-gradient(90deg, #fdf6f2, #fdf6f2);
+
+        #bottom-boxTitle {
+          width: 100%;
+          font-size: 38px;
+        }
+
+        #bottom-boxContent {
+          width: 80%;
+          font-size: 18px;
+        }
+
+        #bottom-boxButton {
+          font-size: 16px;
+          line-height: 20px;
+          padding: 8px 15px;
+          color: var(--white);
+          background: var(--primary);
+          border: 2px solid var(--primary);
+          border-radius: 50px;
+
+          &:hover {
+            cursor: pointer;
+            color: var(--primary);
+            background: var(--white);
+            border: 2px solid var(--primary);
+          }
+        }
       }
     }
   }
@@ -1648,6 +2015,83 @@ body {
     }
   }
 
+  #Offer {
+    width: 100%;
+    padding: 40px 100px;
+    gap: 32px;
+
+    #offer-title {
+      font-size: 32px;
+    }
+
+    #offer-Container {
+      width: 100%;
+      gap: 52px;
+
+      #offer-topContainer {
+        flex-direction: column;
+        gap: 36px;
+
+        .offerBox {
+          width: 100%;
+          flex-grow: 1;
+          padding: 40px;
+          gap: 20px;
+
+          .top-boxTitle {
+            width: 80%;
+            font-size: 22px;
+          }
+
+          .top-boxContent {
+            width: 80%;
+            font-size: 16px;
+          }
+
+          .top-boxButton {
+            font-size: 12px;
+            padding: 8px 14px;
+          }
+        }
+      }
+
+      #offer-bottomContainer {
+        width: 100%;
+        gap: 32px;
+        padding: 40px 40px;
+        border-radius: 30px;
+        background: linear-gradient(90deg, #fdf6f2, #fdf6f2);
+
+        #bottom-boxTitle {
+          width: 100%;
+          font-size: 38px;
+        }
+
+        #bottom-boxContent {
+          width: 80%;
+          font-size: 18px;
+        }
+
+        #bottom-boxButton {
+          font-size: 16px;
+          line-height: 20px;
+          padding: 8px 15px;
+          color: var(--white);
+          background: var(--primary);
+          border: 2px solid var(--primary);
+          border-radius: 50px;
+
+          &:hover {
+            cursor: pointer;
+            color: var(--primary);
+            background: var(--white);
+            border: 2px solid var(--primary);
+          }
+        }
+      }
+    }
+  }
+
   #App {
     width: 100%;
     padding: 40px 100px;
@@ -1927,6 +2371,55 @@ body {
     }
   }
 
+  #Offer {
+    #offer-Container {
+      gap: 24px;
+
+      #offer-topContainer {
+        gap: 24px;
+
+        .offerBox {
+          gap: 16px;
+
+          .top-boxTitle {
+            width: 70%;
+            font-size: 20px;
+          }
+
+          .top-boxContent {
+            width: 70%;
+            font-size: 14px;
+          }
+
+          .top-boxButton {
+            font-size: 12px;
+            padding: 6px 12px;
+          }
+        }
+      }
+
+      #offer-bottomContainer {
+        width: 100%;
+        padding: 50px;
+
+        #bottom-boxTitle {
+          width: 100%;
+          font-size: 36px;
+        }
+
+        #bottom-boxContent {
+          width: 40%;
+          font-size: 16px;
+        }
+
+        #bottom-boxButton {
+          font-size: 16px;
+          padding: 8px 14px;
+        }
+      }
+    }
+  }
+
   #App {
     width: 100%;
 
@@ -2158,6 +2651,53 @@ body {
     }
   }
 
+  #Offer {
+    padding: 40px 6%;
+
+    #offer-Container {
+      #offer-topContainer {
+        .offerBox {
+          padding: 30px;
+          gap: 20px;
+
+          .top-boxTitle {
+            width: 65%;
+            font-size: 22px;
+          }
+
+          .top-boxContent {
+            width: 65%;
+            font-size: 16px;
+          }
+
+          .top-boxButton {
+            font-size: 14px;
+            padding: 6px 14px;
+          }
+        }
+      }
+
+      #offer-bottomContainer {
+        padding: 60px 80px;
+
+        #bottom-boxTitle {
+          width: 30%;
+          font-size: 48px;
+        }
+
+        #bottom-boxContent {
+          width: 30%;
+          font-size: 18px;
+        }
+
+        #bottom-boxButton {
+          font-size: 16px;
+          padding: 6px 14px;
+        }
+      }
+    }
+  }
+
   #App {
     width: 100%;
     padding: 40px 6%;
@@ -2182,7 +2722,7 @@ body {
           padding: 50px 0px;
 
           #mockup-Title {
-            width:80%;
+            width: 80%;
             font-size: 52px;
           }
 
