@@ -27,8 +27,8 @@ body {
 }
 
 #Home {
-  display: none;
-  /* display: flex; */
+  /* display: none; */
+  display: flex;
   justify-content: space-between;
   flex-direction: column;
   height: 900px;
