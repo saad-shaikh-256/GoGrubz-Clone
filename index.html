@@ -1,182 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Go Grubz - Saad Shaikh Application</title>
 
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="Assets/Logo/favicon.png"
-      type="image/x-icon"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go Grubz - Saad Shaikh Application</title>
 
-    <!-- CSS File -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="Assets/Logo/favicon.png" type="image/x-icon" />
 
-  <body>
-    <!-- Home -->
-    <section id="Home">
-      <nav>
-        <div id="leftLink">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="48"
-            height="48"
-            color="#ffffff"
-            fill="none"
-          >
-            <path
-              d="M4 5L20 5"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M4 12L20 12"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M4 19L20 19"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <img src="Assets/Logo/Logo.svg" alt="" />
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+
+
+  <!-- Home -->
+  <section id="Home">
+    <nav>
+      <div id="leftLink">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" color="#ffffff" fill="none">
+          <path d="M4 5L20 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M4 12L20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M4 19L20 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <img src="Assets/Logo/Logo.svg" alt="" />
+      </div>
+
+      <div id="centerLink">
+        <a href="">Home</a>
+        <a href="">Order</a>
+        <a href="">Location</a>
+        <a href="">Contact Us</a>
+        <a href="">About Us</a>
+        <a href="">Add your restaurant</a>
+      </div>
+
+      <div id="rightLink">
+        <a href="" class="signUp">Sign Up</a>
+        <a href="" class="signIn">Sign In</a>
+      </div>
+    </nav>
+
+    <main>
+      <div id="home-Container">
+        <div id="left-Container">
+          <div id="upperContainer">
+            <div id="upperContainer-text">
+              Why Go out when, you can Grubz in
+            </div>
+          </div>
+          <div id="lowerContainer">
+            <div id="searchContainer">
+              <form>
+                <img src="Assets/Icons/sendIcon.svg" alt="" />
+                <input type="text" placeholder="Enter postcode or delivery address" />
+                <img src="Assets/Icons/closeIcon.svg" alt="" />
+              </form>
+              <button>Search</button>
+            </div>
+            <span>Got an account? <a href="">Sign in</a></span>
+          </div>
         </div>
+        <div id="right-Container">
+          <img src="Assets/Images/bannerBg.png" alt="" />
+        </div>
+      </div>
+      <div id="findMore">
+        Let's find you favourite dishes
+        <img src="Assets/Icons/doubleDown.svg" alt="" />
+      </div>
+    </main>
+  </section>
 
-        <div id="centerLink">
-          <a href="">Home</a>
-          <a href="">Order</a>
-          <a href="">Location</a>
-          <a href="">Contact Us</a>
+  <!-- Offer -->
+  <section id="Offer">
+    <div id="offer-title">This week's offers</div>
+
+    <div id="offer-Container">
+      <div id="offer-topContainer">
+        <img src="" alt="" />
+        <div class="offerBox">
+          <div class="top-boxTitle"></div>
+          <div class="top-boxContent"></div>
+          <div class="top-boxButton"></div>
+        </div>
+        <div class="offerBox">
+          <div class="top-boxTitle"></div>
+          <div class="top-boxContent"></div>
+          <div class="top-boxButton"></div>
+        </div>
+        <div class="offerBox">
+          <div class="top-boxTitle"></div>
+          <div class="top-boxContent"></div>
+          <div class="top-boxButton"></div>
+        </div>
+        <img src="" alt="" />
+      </div>
+      <div id="offer-bottomContainer">
+        <div id="bottom-boxTitle"></div>
+        <div id="bottom-boxContent"></div>
+        <div id="bottom-boxButton"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section id="Map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9934.51566130113!2d-0.12820068416777805!3d51.501676882644524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1743505562304!5m2!1sen!2sin"
+      width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- City -->
+  <section id="City">
+    <div id="city-title">View all cities</div>
+
+    <div id="city-Container">
+      <div class="city-List">
+        <a href="">Aberdeen</a>
+        <a href="">Belfast</a>
+        <a href="">Birmingham</a>
+        <a href="">Brighton </a>
+        <a href="">Cambridge </a>
+        <a href="">Cardif</a>
+      </div>
+      <div class="city-List">
+        <a href="">Edinburgh</a>
+        <a href="">Glasgow</a>
+        <a href="">Hull</a>
+        <a href="">Leeds</a>
+        <a href="">Leicester</a>
+        <a href="">London</a>
+      </div>
+      <div class="city-List">
+        <a href="">Manchester</a>
+        <a href="">Merseyside</a>
+        <a href="">North East</a>
+        <a href="">Northampton </a>
+        <a href="">Milton Keynes</a>
+        <a href="">Nottingham</a>
+      </div>
+      <div class="city-List">
+        <a href="">Oxford</a>
+        <a href="">Sheffield</a>
+        <a href="">South coast</a>
+        <a href="">South West</a>
+        <a href="">Stoke</a>
+      </div>
+    </div>
+    <div id="view-all">View all</div>
+  </section>
+
+  <!-- Footer -->
+  <section id="Footer">
+    <div id="footer-leftContainer">
+      <img src="Assets/Logo/footerLogo.svg" alt="" />
+      &copy; 2022 GoGrubz Ltd. All Rights Reserved.
+    </div>
+    <div id="footer-rightContainer">
+      <div class="footer-links">
+        <a href="">Get Help</a>
+        <a href="">Buy gift cards</a>
+        <a href="">Add your restaurant</a>
+        <a href="">Sign up to delivery</a>
+        <a href="">Create a business account</a>
+        <a href="">Promorions</a>
+      </div>
+      <div class="footer-links">
+        <a href="">Restaurants near me</a>
+        <a href="">View all cities</a>
+        <a href="">View all countries</a>
+        <a href="">Pickup near me/a>
           <a href="">About Us</a>
-          <a href="">Add your restaurant</a>
-        </div>
-
-        <div id="rightLink">
-          <a href="" class="signUp">Sign Up</a>
-          <a href="" class="signIn">Sign In</a>
-        </div>
-      </nav>
-
-      <main>
-        <div id="home-Container">
-          <div id="left-Container">
-            <div id="upperContainer">
-              <div id="upperContainer-text">
-                Why Go out when, you can Grubz in
-              </div>
-            </div>
-            <div id="lowerContainer">
-              <div id="searchContainer">
-                <form>
-                  <img src="Assets/Icons/sendIcon.svg" alt="" />
-                  <input
-                    type="text"
-                    placeholder="Enter postcode or delivery address"
-                  />
-                  <img src="Assets/Icons/closeIcon.svg" alt="" />
-                </form>
-                <button>Search</button>
-              </div>
-              <span>Got an account? <a href="">Sign in</a></span>
-            </div>
-          </div>
-          <div id="right-Container">
-            <img src="Assets/Images/bannerBg.png" alt="" />
-          </div>
-        </div>
-        <div id="findMore">
-          Let's find you favourite dishes
-          <img src="Assets/Icons/doubleDown.svg" alt="" />
-        </div>
-      </main>
-    </section>
-
-    <section id="Offer">
-      <div id="offer-title">This week's offers</div>
-
-      <div id="offer-Container">
-        <div id="offer-topContainer">
-          <img src="" alt="" />
-          <div class="offerBox">
-            <div class="top-boxTitle"></div>
-            <div class="top-boxContent"></div>
-            <div class="top-boxButton"></div>
-          </div>
-          <div class="offerBox">
-            <div class="top-boxTitle"></div>
-            <div class="top-boxContent"></div>
-            <div class="top-boxButton"></div>
-          </div>
-          <div class="offerBox">
-            <div class="top-boxTitle"></div>
-            <div class="top-boxContent"></div>
-            <div class="top-boxButton"></div>
-          </div>
-          <img src="" alt="" />
-        </div>
-        <div id="offer-bottomContainer">
-          <div id="bottom-boxTitle"></div>
-          <div id="bottom-boxContent"></div>
-          <div id="bottom-boxButton"></div>
+          <a href="">English</a>
+      </div>
+      <div class="footer-socialMedia">
+        FOLLOW US
+        <div id="socialMedia-Icons">
+          <img src="Assets/Icons/facebookIcon.svg" alt="" />
+          <img src="Assets/Icons/twitterIcon.svg" alt="" />
+          <img src="Assets/Icons/instagramIcon.svg" alt="" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="Map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9934.51566130113!2d-0.12820068416777805!3d51.501676882644524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1743505562304!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+  <!-- JS File -->
+  <script src="script.js"></script>
+</body>
 
-    <section id="City">
-      <div id="city-title">View all cities</div>
-
-      <div id="city-Container">
-        <div class="city-List">
-          <a href="">Aberdeen</a>
-          <a href="">Belfast</a>
-          <a href="">Birmingham</a>
-          <a href="">Brighton </a>
-          <a href="">Cambridge </a>
-          <a href="">Cardif</a>
-        </div>
-        <div class="city-List">
-          <a href="">Edinburgh</a>
-          <a href="">Glasgow</a>
-          <a href="">Hull</a>
-          <a href="">Leeds</a>
-          <a href="">Leicester</a>
-          <a href="">London</a>
-        </div>
-        <div class="city-List">
-          <a href="">Manchester</a>
-          <a href="">Merseyside</a>
-          <a href="">North East</a>
-          <a href="">Northampton </a>
-          <a href="">Milton Keynes</a>
-          <a href="">Nottingham</a>
-        </div>
-        <div class="city-List">
-          <a href="">Oxford</a>
-          <a href="">Sheffield</a>
-          <a href="">South coast</a>
-          <a href="">South West</a>
-          <a href="">Stoke</a>
-        </div>
-      </div>
-      <div id="view-all">View all</div>
-    </section>
-    <!-- JS File -->
-    <script src="script.js"></script>
-  </body>
 </html>
