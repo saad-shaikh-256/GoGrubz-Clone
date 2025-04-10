@@ -1,4 +1,4 @@
-# GoGrubz Clone 🍔
+# GoGrubz Clone
 
 ![GoGrubz Clone](https://github.com/saad-shaikh-256/GoGrubz-Clone/blob/main/Cover.png)
 
